@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Heart Disease Predictor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="display-4 text-center">Heart Disease Predictor</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Age</label>
+                            <input type="text" class="form-control" name="age" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Gender</label>
+                            <input type="text" class="form-control" name="gender" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">CP</label>
+                            <input type="text" class="form-control" name="cp" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">TRestBPS</label>
+                            <input type="text" class="form-control" name="TRestBPS" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Cholesterol</label>
+                            <input type="text" class="form-control" name="chol" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">FBS</label>
+                            <input type="text" class="form-control" name="fbs" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">RestECG</label>
+                            <input type="text" class="form-control" name="RestECG" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">thalach</label>
+                            <input type="text" class="form-control" name="thalach" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">exang</label>
+                            <input type="text" class="form-control" name="exang" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">oldpeak</label>
+                            <input type="text" class="form-control" name="oldpeak" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">slope</label>
+                            <input type="text" class="form-control" name="slope" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">ca</label>
+                            <input type="text" class="form-control" name="ca" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Thal</label>
+                            <input type="text" class="form-control" name="thal" id="" aria-describedby="helpId"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <footer class="text-center">
+        {% if res == 1 %}
+        <h1>for the given parameter he might get heart disease</h1>
+        {% elif res==0 %}
+        <h1>for the given parameter he might not get heart disease</h1>
+        {% endif %}
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
